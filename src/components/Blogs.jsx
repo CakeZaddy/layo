@@ -1,5 +1,4 @@
 import React from 'react'
-import BlogSlider from './BlogSlider'
 
 const Blogs = () => {
   return (
@@ -43,7 +42,7 @@ const Blogs = () => {
             </button>
           </div>
         </div> */}
-        <div className='mx-5 2xl:mx-[100px] mt-10'>{/* <BlogSlider /> */}</div>
+        {/* <div className='mx-5 2xl:mx-[100px] mt-10'></div> */}
       </div>
     </div>
   )

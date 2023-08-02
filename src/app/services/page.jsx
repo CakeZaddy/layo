@@ -1,10 +1,10 @@
-import Testimonials from '@/components/Testimonials'
 import { services } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 import Laptop from 'public/service-laptop.jpg'
+import Testimonial from '@/components/Testimonial'
 
 const Service = ({ id, title, service, info, image }) => (
   <div className='py-5 lg:grid grid-cols-2 md:px-[150px] xl:px-[250px]  gap-7'>
@@ -71,7 +71,7 @@ const page = () => {
           </button>
         </Link>
       </div>
-      {/* <Testimonials /> */}
+      <Testimonial />
     </div>
   )
 }

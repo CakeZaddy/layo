@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -30,9 +31,13 @@ const About = () => {
         </Link>
       </div>
       <div className='mt-8'>
-        <img
+        <Image
+          width={0}
+          height={0}
+          sizes='100vw'
+          style={{ width: '100%', height: 'auto' }}
           src='https://res.cloudinary.com/dwgberjxq/image/upload/v1684222822/layo/layo_sej9br.jpg'
-          alt=''
+          alt='/'
         />
       </div>
     </div>

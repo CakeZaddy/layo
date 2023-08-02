@@ -77,10 +77,9 @@ const Navbar = ({ params }) => {
         </h1>
         <ul className='text-center text-gray-500 font-semibold text-5xl pt-10'>
           {links.map((link) => (
-            <li>
+            <li key={link.id}>
               <Link
                 onClick={handleNav}
-                key={link.id}
                 href={link.url}
                 className={` p-4 hover:text-black dark:hover:text-white con inline-block cursor-pointer ${
                   pathMatch(link.url) &&

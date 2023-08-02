@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='px-6 md:px-[100px] lg:px-[150px] xl:px-[200px] xl:px[200px] md:flex mt-4 sm:mt-20 md:mt-[150px] lg:mt-[200px] font-neuton text-lg xl:mt-[250px] 2xl:mt-[300px] gap-10 mb-8 overflow-hidden'>
       <div className=''>
-        <h2 className='text-3xl font-semibold '>Hi, I'm Ebunoluwa</h2>
+        <h2 className='text-3xl font-semibold '>Hi, I am Ebunoluwa</h2>
         <div className='my-8 flex flex-col gap-3  '>
           <p className='font-bold'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sunt

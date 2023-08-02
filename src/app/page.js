@@ -4,7 +4,6 @@ import Hero from '@/components/Hero'
 import Quote from '@/components/Quote'
 import Services from '@/components/Services'
 import Testimonial from '@/components/Testimonial'
-import Testimonials from '@/components/Testimonials'
 import Image from 'next/image'
 
 export default function Home() {

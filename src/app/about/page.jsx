@@ -1,8 +1,8 @@
 import Services from '@/components/Services'
-import Testimonials from '@/components/Testimonials'
 import Image from 'next/image'
 import React from 'react'
 import Work from 'public/workwith.jpg'
+import Testimonial from '@/components/Testimonial'
 
 const page = () => {
   return (
@@ -94,7 +94,7 @@ const page = () => {
         </div>
       </div>
       <Services />
-      {/* <Testimonials /> */}
+      <Testimonial />
     </div>
   )
 }

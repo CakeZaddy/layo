@@ -9,7 +9,7 @@ import emailjs from '@emailjs/browser'
 
 import Laptop from 'public/laptoppm.jpg'
 
-const page = () => {
+const Page = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
     name: '',
@@ -177,4 +177,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -74,7 +74,7 @@ const Testimonial = () => {
           }}
         >
           {testimonials.map((testimonial, index, id) => (
-            <SwiperSlide>
+            <SwiperSlide key={testimonial.id}>
               <div className='p-5'>
                 <FeedbackCard
                   key={testimonial.id}

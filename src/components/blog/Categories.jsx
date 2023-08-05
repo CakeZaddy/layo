@@ -4,7 +4,7 @@ import React from 'react'
 import { getCategories } from '../../../sanity/client'
 import Link from 'next/link'
 
-async function Categories() {
+export default async function Categories() {
   const categories = await getCategories()
 
   categories.sort((a, b) => new Date(b._createdAt) - new Date(a._createdAt))
@@ -22,5 +22,3 @@ async function Categories() {
     </div>
   )
 }
-
-export default Categories

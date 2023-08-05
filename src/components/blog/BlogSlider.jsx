@@ -60,7 +60,7 @@ const BlogSlider = () => {
         }}
       >
         {posts.map((post) => (
-          <SwiperSlide>
+          <SwiperSlide key={post.id}>
             <FeaturedBlog post={post} key={post.id} />
           </SwiperSlide>
         ))}

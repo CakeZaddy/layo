@@ -4,6 +4,14 @@ import { tiltOptions } from '@/utils'
 import React from 'react'
 import { Tilt } from 'react-tilt'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules'
+import 'swiper/css/bundle'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+
 const FeedbackCard = ({
   index,
   testimonial,
@@ -33,15 +41,50 @@ const FeedbackCard = ({
 const Testimonial = () => {
   return (
     <div className=''>
-      <div className='py-10 '>
-        <h2 className='text-3xl font-eczar text-center md:font-medium md:text-4xl'>
+      <div className=''>
+        <h2 className='text-3xl mt-5 font-eczar text-center md:font-medium md:text-4xl'>
           Client Testimonials
         </h2>
       </div>
-      <div className='mx-5  flex gap-3 mt-10 h-full'>
-        {testimonials.map((testimonial, index, id) => (
-          <FeedbackCard key={testimonial.id} index={index} {...testimonial} />
-        ))}
+      <div className=' mt-10 h-full'>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={3}
+          slidesPerView={1}
+          navigation={true}
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+          loop={true}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+        >
+          {testimonials.map((testimonial, index, id) => (
+            <SwiperSlide>
+              <div className='p-5'>
+                <FeedbackCard
+                  key={testimonial.id}
+                  index={index}
+                  {...testimonial}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className='flex justify-center items-center'>
         <button className='h-[50px] w-[220px] bg-orange-400 hover:bg-orange-500 dark:text-black font-medium text-lg cursor-pointer font-eczar rounded-full my-8'>

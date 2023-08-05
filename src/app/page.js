@@ -1,5 +1,5 @@
 import About from '@/components/About'
-import Blogs from '@/components/Blogs'
+import Blogs from '@/components/blog/Blogs'
 import Hero from '@/components/Hero'
 import Quote from '@/components/Quote'
 import Services from '@/components/Services'
@@ -9,13 +9,11 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main>
-      <div className=''>
+      <div className='overflow-hidden'>
         <Hero />
         <About />
         <Services />
-        <div className=' overflow-hidden'>
-          <Testimonial />
-        </div>
+        <Testimonial />
         <Quote />
         <Blogs />
       </div>

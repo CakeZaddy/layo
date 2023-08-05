@@ -15,7 +15,7 @@ const ToggleButton = () => {
   }
   return (
     <button
-      className='fixed z-[100] top-5 left-5'
+      className='fixed z-[100] top-3 left-3'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       {resolvedTheme === 'dark' ? (

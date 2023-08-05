@@ -124,4 +124,73 @@ const links = [
   },
 ]
 
-export { testimonials, services, links }
+const blogs = [
+  {
+    id: 1,
+    slug: 'layo.vercel.com',
+    mainImage:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+    _createdAt: '06/06/2023',
+    title: 'This Blog',
+    author: 'Susu',
+    image:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+  },
+  {
+    id: 2,
+    slug: 'layo.vercel.com',
+    mainImage:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+    _createdAt: '06/06/2023',
+    title: 'This Blog',
+    author: 'Susu',
+    image:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+  },
+  {
+    id: 3,
+    slug: 'layo.vercel.com',
+    mainImage:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+    _createdAt: '06/06/2023',
+    title: 'This Blog',
+    author: 'Susu',
+    image:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+  },
+  {
+    id: 4,
+    slug: 'layo.vercel.com',
+    mainImage:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+    _createdAt: '06/06/2023',
+    title: 'This Blog',
+    author: 'Susu',
+    image:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+  },
+  {
+    id: 5,
+    slug: 'layo.vercel.com',
+    mainImage:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+    _createdAt: '06/06/2023',
+    title: 'This Blog',
+    author: 'Susu',
+    image:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+  },
+  {
+    id: 6,
+    slug: 'layo.vercel.com',
+    mainImage:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+    _createdAt: '06/06/2023',
+    title: 'This Blog',
+    author: 'Susu',
+    image:
+      'https://res.cloudinary.com/dwgberjxq/image/upload/v1684227376/layo/brainstorm_kwpdbp.jpg',
+  },
+]
+
+export { testimonials, services, links, blogs }
